@@ -1,16 +1,13 @@
-public class Patient {
-    private String name;
+
+public class Patient extends Person {
+
     private String address;
     private String telephone;
 
     public Patient(String name, String address, String telephone) {
-        this.name = name;
+        super(name);
         this.address = address;
         this.telephone = telephone;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getAddress() {
@@ -19,10 +16,6 @@ public class Patient {
 
     public String getTelephone() {
         return telephone;
-    }
-    
-    public void setName(String name) {
-        this.name = name;
     }
 
     public void setAddress(String address) {
